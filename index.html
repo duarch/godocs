@@ -13,37 +13,42 @@
     </header>
     <ul>
       <li>
-        <a href="#introduction">Introduction</a>
+        <a class="nav-link" href="#Introduction">Introduction</a>
       </li>
       <li>
-        <a href="#Organization">Code Organization</a>
+        <a class="nav-link" href="#Code_Organization">Code Organization</a>
       </li>
       <li>
-        <a href="#Command">Command</a>
+        <a class="nav-link" href="#Command">Command</a>
       </li>
       <li>
-        <a href="#local">Importing packages from your local module</a>
+        <a class="nav-link" href="#Importing_packages_from_your_module"
+          >Importing packages from your module</a
+        >
       </li>
       <li>
-        <a href="#remote">Importing packages from remote modules</a>
+        <a class="nav-link" href="#Importing_packages_from_remote_modules"
+          >Importing packages from remote modules</a
+        >
       </li>
       <li>
-        <a href="#testing">Testing</a>
+        <a class="nav-link" href="#Testing">Testing</a>
       </li>
       <li>
-        <a href="Next">What's next</a>
+        <a class="nav-link" href="#What's_next">What's next</a>
       </li>
       <li>
-        <a href="#help">Getting Help</a>
+        <a class="nav-link" href="#Getting_help">Getting help</a>
       </li>
     </ul>
   </nav>
-  <body>
-    <main id="main-doc">
-      <section class="main-section" id="Introduction">
-        <header id="introduction">
-          Introduction
-        </header>
+  <!-- <body> -->
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header id="introduction">
+        Introduction
+      </header>
+      <article>
         <p>
           This document demonstrates the development of a simple Go package
           inside a module and introduces the <a href="/cmd/go/">go tool</a>, the
@@ -58,11 +63,13 @@
           looking for the older, pre-modules version of this document, it is
           archived <a href="gopath_code.html">here</a>.
         </p>
-      </section>
-      <section class="main-section" id="Organization">
-        <header id="Organization">
-          Code Organization
-        </header>
+      </article>
+    </section>
+    <section class="main-section" id="Code_Organization">
+      <header id="Code_Organization">
+        Code Organization
+      </header>
+      <article>
         <p>
           Go programs are organized into packages. A <dfn>package</dfn> is a
           collection of source files in the same directory that are compiled
@@ -110,12 +117,14 @@
           <code>github.com/google/go-cmp/cmp</code>. Packages in the standard
           library do not have a module path prefix.
         </p>
-      </section>
+      </article>
+    </section>
 
-      <section class="main-section" id="Command">
-        <header id="Command">
-          Command
-        </header>
+    <section class="main-section" id="Command">
+      <header id="Command">
+        Command
+      </header>
+      <article>
         <p>
           To compile and run a simple program, first choose a module path (we'll
           use
@@ -283,12 +292,14 @@ $
           module available for others to use is usually to make its module path
           match the URL for the repository.
         </p>
-      </section>
+      </article>
+    </section>
 
-      <section class="main-section" id="local">
-        <header id="local">
-          Importing packages from your local module
-        </header>
+    <section class="main-section" id="Importing_packages_from_your_module">
+      <header id="Importing_packages_from_your_module">
+        Importing packages from your module
+      </header>
+      <article>
         <p>
           Let's write a <code>morestrings</code> package and use it from the
           <code>hello</code> program. First, create a directory for the package
@@ -370,12 +381,14 @@ $ <b>hello</b>
 Hello, Go!
 </pre
         >
-      </section>
+      </article>
+    </section>
 
-      <section class="main-section" id="Remote">
-        <header id="remote">
-          Importing packages from remote modules
-        </header>
+    <section class="main-section" id="Importing_packages_from_remote_modules">
+      <header id="Importing_packages_from_remote_modules">
+        Importing packages from remote modules
+      </header>
+      <article>
         <p>
           An import path can describe how to obtain the package source code
           using a revision control system such as Git or Mercurial. The
@@ -442,12 +455,14 @@ $ go clean -modcache
 $
 </pre
         >
-      </section>
-      <section class="main-section" id="testing">
-        <header id="testing">
-          Testing
-        </header>
+      </article>
+    </section>
 
+    <section class="main-section" id="Testing">
+      <header id="Testing">
+        Testing
+      </header>
+      <article>
         <p>
           Go has a lightweight test framework composed of the
           <code>go test</code> command and the <code>testing</code> package.
@@ -505,80 +520,82 @@ $
           see the <a href="/pkg/testing/">testing package documentation</a> for
           more detail.
         </p>
-      </section>
+      </article>
+    </section>
 
-      <section class="main-section" id="Next">
-        <header id="next">
-          What's next
-        </header>
-        <li>
-          <p>
-            Subscribe to the
-            <a href="//groups.google.com/group/golang-announce"
-              >golang-announce</a
-            >
-            mailing list to be notified when a new stable version of Go is
-            released.
-          </p>
-        </li>
-        <li>
-          <p>
-            See <a href="/doc/effective_go.html">Effective Go</a> for tips on
-            writing clear, idiomatic Go code.
-          </p>
-        </li>
-        <li>
-          <p>
-            Take
-            <a href="//tour.golang.org/">A Tour of Go</a>
-            to learn the language proper.
-          </p>
-        </li>
-        <li>
-          <p>
-            Visit the <a href="/doc/#articles">documentation page</a> for a set
-            of in-depth articles about the Go language and its libraries and
-            tools.
-          </p>
-        </li>
-      </section>
+    <section class="main-section" id="What's_next">
+      <header id="What's_next">
+        What's next
+      </header>
+      <article>
+        <ul>
+          <li>
+            <p>
+              Subscribe to the
+              <a href="//groups.google.com/group/golang-announce"
+                >golang-announce</a
+              >
+              mailing list to be notified when a new stable version of Go is
+              released.
+            </p>
+          </li>
+          <li>
+            <p>
+              See <a href="/doc/effective_go.html">Effective Go</a> for tips on
+              writing clear, idiomatic Go code.
+            </p>
+          </li>
+          <li>
+            <p>
+              Take
+              <a href="//tour.golang.org/">A Tour of Go</a>
+              to learn the language proper.
+            </p>
+          </li>
+          <li>
+            <p>
+              Visit the <a href="/doc/#articles">documentation page</a> for a
+              set of in-depth articles about the Go language and its libraries
+              and tools.
+            </p>
+          </li>
+        </ul>
+      </article>
+    </section>
 
-      <section class="main-section" id="help">
-        <header id="help">
-          Getting help
-        </header>
-        <li>
-          <p>
-            For real-time help, ask the helpful gophers in the community-run
-            <a href="https://gophers.slack.com/messages/general/"
-              >gophers Slack server</a
-            >
+    <section class="main-section" id="Getting_help">
+      <header id="Getting_help">
+        Getting help
+      </header>
+      <article>
+        <ul>
+          <li>
+            <p>
+              For real-time help, ask the helpful gophers in the community-run
+              <a href="https://gophers.slack.com/messages/general/"
+                >gophers Slack server</a
+              >
 
-            (grab an invite
-            <a href="https://invite.slack.golangbridge.org/">here</a>).
-          </p>
-        </li>
-        <li>
-          <p>
-            The official mailing list for discussion of the Go language is
-            <a href="//groups.google.com/group/golang-nuts">Go Nuts</a>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Report bugs using the
-            <a href="//golang.org/issue">Go issue tracker</a>.
-          </p>
-        </li>
-      </section>
-
-      <section class="main-section" id="Introduction">
-        <header id="introduction">
-          Introduction
-        </header>
-      </section>
-    </main>
-    <footer></footer>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  </body>
+              (grab an invite
+              <a href="https://invite.slack.golangbridge.org/">here</a>).
+            </p>
+          </li>
+          <li>
+            <p>
+              The official mailing list for discussion of the Go language is
+              <a href="//groups.google.com/group/golang-nuts">Go Nuts</a>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Report bugs using the
+              <a href="//golang.org/issue">Go issue tracker</a>.
+            </p>
+          </li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
